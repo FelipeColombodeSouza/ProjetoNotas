@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.anderson.frames;
+package br.com.felipe.frames;
 
-import br.com.anderson.objeto.Aluno;
-import br.com.anderson.objeto.Nota;
-import br.com.anderson.objeto.TipoAvaliacao;
+import br.com.felipe.objeto.Aluno;
+import br.com.felipe.objeto.Nota;
+import br.com.felipe.objeto.TipoAvaliacao;
 import javax.swing.JOptionPane;
 
 /**
@@ -15,7 +15,9 @@ import javax.swing.JOptionPane;
  * @author SATC
  */
 public class PrincipalJava extends javax.swing.JFrame {
-     Aluno a;
+
+    Aluno a;
+
     /**
      * Creates new form PrincipalJava
      */
@@ -60,10 +62,10 @@ public class PrincipalJava extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 255, 255));
 
         jLTitulo.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLTitulo.setText("Calculo de Média");
+        jLTitulo.setText("Calculo da Média");
 
-        jPNotas.setBackground(new java.awt.Color(0, 153, 153));
-        jPNotas.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPNotas.setBackground(new java.awt.Color(255, 255, 255));
+        jPNotas.setBorder(new javax.swing.border.MatteBorder(null));
 
         jBCalcular.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jBCalcular.setText("Calcular");
@@ -132,7 +134,7 @@ public class PrincipalJava extends javax.swing.JFrame {
                             .addComponent(jTFN3, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jTFN2, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPNotasLayout.createSequentialGroup()
-                                .addGap(0, 32, Short.MAX_VALUE)
+                                .addGap(0, 36, Short.MAX_VALUE)
                                 .addComponent(jLNotas)
                                 .addGap(33, 33, 33))
                             .addComponent(jTFN1, javax.swing.GroupLayout.Alignment.TRAILING)))
@@ -163,7 +165,7 @@ public class PrincipalJava extends javax.swing.JFrame {
                         .addGroup(jPNotasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jTFN4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLN4))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jBCalcular))
                     .addGroup(jPNotasLayout.createSequentialGroup()
                         .addComponent(jLDisciplina)
@@ -175,8 +177,8 @@ public class PrincipalJava extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPAluno.setBackground(new java.awt.Color(0, 153, 153));
-        jPAluno.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPAluno.setBackground(new java.awt.Color(255, 255, 255));
+        jPAluno.setBorder(new javax.swing.border.MatteBorder(null));
 
         jLAluno.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLAluno.setText("Aluno");
@@ -247,25 +249,26 @@ public class PrincipalJava extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(20, 20, 20)
-                .addComponent(jPAluno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jPNotas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(23, 23, 23))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(148, 148, 148)
-                .addComponent(jLTitulo)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLTitulo)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPAluno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jPNotas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(23, 23, 23))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
+                .addGap(30, 30, 30)
                 .addComponent(jLTitulo)
-                .addGap(36, 36, 36)
+                .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPNotas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPAluno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         pack();
@@ -275,10 +278,10 @@ public class PrincipalJava extends javax.swing.JFrame {
         // TODO add your handling code here:
         String nome = jTFNome.getText();
         int matricula = 0;
-        try{
-        matricula = Integer.parseInt(jTFMatricula.getText());
-        }catch(NumberFormatException nfe){
-            JOptionPane.showMessageDialog(this, "Você digitou um caracter inválido."+nfe);
+        try {
+            matricula = Integer.parseInt(jTFMatricula.getText());
+        } catch (NumberFormatException nfe) {
+            JOptionPane.showMessageDialog(this, "Você digitou um caracter inválido." + nfe);
             throw new RuntimeException();
         }
         a = new Aluno(nome, matricula);
@@ -287,48 +290,51 @@ public class PrincipalJava extends javax.swing.JFrame {
 
     private void jBCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBCalcularActionPerformed
         // TODO add your handling code here:
-        Aluno a = new Aluno(jTFNome.getText(), Integer.parseInt(jTFMatricula.getText()));
+        String nome = jTFNome.getText();
+        int matricula = Integer.parseInt(jTFMatricula.getText());
+
+        Aluno a = new Aluno(nome, matricula);
         TipoAvaliacao tipo = null;
-        switch(JCBTipoAvailacao.getSelectedIndex()){
-            case 0:{
-                tipo = TipoAvaliacao.PROVA;
+        switch (JCBTipoAvailacao.getSelectedIndex()) {
+            case 0: {
+                tipo = TipoAvaliacao.Prova;
                 break;
             }
-            case 1:{
-                tipo = TipoAvaliacao.TRABALHO;
+            case 1: {
+                tipo = TipoAvaliacao.Trabalho;
                 break;
             }
-            case 2:{
-                tipo = TipoAvaliacao.SEMINARIO;
+            case 2: {
+                tipo = TipoAvaliacao.Seminario;
                 break;
             }
         }
-        try{
-        a.getNotas().add(new Nota(jTFDisciplina.getText(), tipo, Float.parseFloat((jTFN1.getText()))));
-        }catch(NumberFormatException nfe) {
-            JOptionPane.showMessageDialog(this, "Você digitou um caracter inválido."+nfe);
-            throw new RuntimeException();
-        }
-        try{
-        a.getNotas().add(new Nota(jTFDisciplina.getText(), tipo, Float.parseFloat((jTFN2.getText()))));
-        }catch(NumberFormatException nfe) {
-            JOptionPane.showMessageDialog(this, "Você digitou um caracter inválido."+nfe);
+        try {
+            a.getNotas().add(new Nota(jTFDisciplina.getText(), tipo, Float.parseFloat((jTFN1.getText()))));
+        } catch (NumberFormatException nfe) {
+            JOptionPane.showMessageDialog(this, "Você digitou um caracter inválido." + nfe);
             throw new RuntimeException();
         }
         try {
-        a.getNotas().add(new Nota(jTFDisciplina.getText(), tipo, Float.parseFloat((jTFN3.getText()))));
-        }catch(NumberFormatException nfe) {
-            JOptionPane.showMessageDialog(this, "Você digitou um caracter inválido."+nfe);
+            a.getNotas().add(new Nota(jTFDisciplina.getText(), tipo, Float.parseFloat((jTFN2.getText()))));
+        } catch (NumberFormatException nfe) {
+            JOptionPane.showMessageDialog(this, "Você digitou um caracter inválido." + nfe);
             throw new RuntimeException();
         }
-        try{
-        a.getNotas().add(new Nota(jTFDisciplina.getText(), tipo, Float.parseFloat((jTFN4.getText()))));
-        }catch(NumberFormatException nfe) {
-            JOptionPane.showMessageDialog(this, "Você digitou um caracter inválido."+nfe);
+        try {
+            a.getNotas().add(new Nota(jTFDisciplina.getText(), tipo, Float.parseFloat((jTFN3.getText()))));
+        } catch (NumberFormatException nfe) {
+            JOptionPane.showMessageDialog(this, "Você digitou um caracter inválido." + nfe);
             throw new RuntimeException();
-        }       
-        
-        JOptionPane.showMessageDialog(null, a.toString()+"\n" + "Média: " + a.calcularMedia());
+        }
+        try {
+            a.getNotas().add(new Nota(jTFDisciplina.getText(), tipo, Float.parseFloat((jTFN4.getText()))));
+        } catch (NumberFormatException nfe) {
+            JOptionPane.showMessageDialog(this, "Você digitou um caracter inválido." + nfe);
+            throw new RuntimeException();
+        }
+
+        JOptionPane.showMessageDialog(null, a.toString() + "\n" + "Média: " + a.calcularMedia());
     }//GEN-LAST:event_jBCalcularActionPerformed
 
     /**

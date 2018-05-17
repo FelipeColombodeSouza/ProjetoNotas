@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.anderson.objeto;
+package br.com.felipe.objeto;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,7 +54,7 @@ public class Aluno {
         for (Nota nota : notas) {
             
         }
-        return "Aluno : " + "\nNome : " + nome + ", Matrícula : " + matricula + "\nNotas : " + notas + '.';
+        return "~~Aluno~~" + "\nNome : " + nome + "\nMatrícula : " + matricula + "\nNotas : " + notas;
     }
     
     public double calcularMedia(){

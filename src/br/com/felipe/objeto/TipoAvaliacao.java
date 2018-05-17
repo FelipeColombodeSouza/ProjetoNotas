@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.anderson.objeto;
+package br.com.felipe.objeto;
 
 /**
  *
  * @author SATC
  */
 public enum TipoAvaliacao {
-    PROVA("Avaliação Individual"),
-    TRABALHO("Trabalho"),
-    SEMINARIO("Seminário");
+    Prova("Avaliação Individual"),
+    Trabalho("Trabalho"),
+    Seminario("Seminário");
     
     private String nomeAvaliacao;
     

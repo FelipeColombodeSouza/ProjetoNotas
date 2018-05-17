@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.anderson.objeto;
+package br.com.felipe.objeto;
 
 /**
  *
@@ -47,7 +47,7 @@ public class Nota {
 
     @Override
     public String toString() {
-        return "\nDisciplina : " + disciplina + ", Tipo : " + tipo + ", Nota : " + nota + '.';
+        return "\n" + tipo + " de " + disciplina + ", Nota: " + nota;
     }
 
     
